@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.star-outer {
+  position: relative;
+  font-size: 2rem;
+  display: inline-block;
+}
+.star-outer::before {
+  content: "\2605 \2605 \2605 \2605 \2605";
+  color: rgba(88, 88, 88, 0.533);
+}
+.star-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  overflow: hidden;
+}
+.star-inner::before {
+  content: "\2605 \2605 \2605 \2605 \2605";
+  color: gold;
+}
